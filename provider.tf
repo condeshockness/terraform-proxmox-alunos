@@ -34,6 +34,6 @@ locals {
 provider "proxmox" {
   pm_api_url          = var.pm_api_url
   pm_api_token_id     = var.pm_api_token_id
-  pm_api_token_secret = data.vault_kv_secret_v2.proxmox_secret.data["pm_api_token_secret"]
+  pm_api_token_secret = jsondecode(data.vault_kv_secret_v2.proxmox_secret.data_json)["pm_api_token_secret"]
   pm_tls_insecure     = true
 }
