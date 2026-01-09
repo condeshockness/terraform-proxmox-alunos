@@ -2,6 +2,18 @@ variable "hostname" {
   type = string
 }
 
+variable "vmid" {
+  type = number
+}
+
+# ===== Acesso =====
+
+variable "password" {
+  type      = string
+  sensitive = true
+}
+
+
 variable "target_node" {
   type = string
 }
@@ -67,10 +79,3 @@ variable "networks" {
   }))
 }
 
-
-# ===== Acesso =====
-
-variable "password" {
-  type      = string
-  sensitive = true
-}
