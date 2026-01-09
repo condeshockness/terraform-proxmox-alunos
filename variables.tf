@@ -97,6 +97,14 @@ variable "alunos_networks" {
     gw     = optional(string)
     tag    = optional(number)
   }))
+
+  default = [
+    {
+      name   = "eth0"
+      bridge = "vmbr0"
+      ip     = "dhcp"
+    }
+  ]
 }
 
 
