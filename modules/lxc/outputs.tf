@@ -1,11 +1,11 @@
-output "vmid" {
-  value = proxmox_lxc.this.vmid
+output "id" {
+  value = proxmox_lxc.this.id
 }
 
 output "hostname" {
   value = proxmox_lxc.this.hostname
 }
 
-output "node" {
-  value = proxmox_lxc.this.target_node
+output "vmid" {
+  value = proxmox_lxc.this.vmid
 }
