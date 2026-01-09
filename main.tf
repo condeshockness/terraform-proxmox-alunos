@@ -30,4 +30,5 @@ module "alunos_lxc" {
   storage   = var.default_storage
 
   networks = each.value.networks
+  start  = var.start_on_create
 }
