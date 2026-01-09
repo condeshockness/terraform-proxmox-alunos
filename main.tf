@@ -23,7 +23,7 @@ module "alunos_lxc" {
   hostname    = each.value.hostname
   target_node = var.target_node
   clone_name  = var.lxc_template_name
-
+  password    = local.lxc_password
   cores     = var.default_cores
   memory    = var.default_memory
   disk_size = var.default_disk_size
