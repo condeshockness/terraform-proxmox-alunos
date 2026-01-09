@@ -1,5 +1,6 @@
 resource "proxmox_lxc" "this" {
   hostname    = var.hostname
+  vmid        = var.vmid
   target_node = var.target_node
   clone       = var.clone_name
   full        = true

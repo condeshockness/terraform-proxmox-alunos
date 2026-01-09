@@ -47,7 +47,7 @@ variable "target_node" {
 
 variable "default_cores" {
   type    = number
-  default = 2
+  default = 1
 }
 
 variable "default_memory" {
