@@ -1,7 +1,13 @@
-output "lxc_ids" {
-  value = { for k, v in module.lxc_containers : k => v.lxc_id }
+output "alunos_lxc_ids" {
+  value = {
+    for k, m in module.alunos_lxc :
+    k => m.lxc_id
+  }
 }
 
-output "lxc_hostnames" {
-  value = { for k, v in module.lxc_containers : k => v.lxc_hostname }
+output "alunos_lxc_hostnames" {
+  value = {
+    for k, m in module.alunos_lxc :
+    k => m.hostname
+  }
 }
