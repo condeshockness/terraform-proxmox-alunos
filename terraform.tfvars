@@ -1,7 +1,7 @@
 vault_address = ""
 vault_token   = ""
 
-lxc_template_name = "lxc-debian13-base-v1"
+lxc_template_name = "lxc-base-debian13-v1"
 target_node       = "proxmox"
 
 alunos_start_vmid = 300
