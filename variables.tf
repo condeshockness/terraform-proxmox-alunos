@@ -103,6 +103,7 @@ variable "alunos_networks" {
       name   = "eth0"
       bridge = "vmbr0"
       ip     = "dhcp"
+      tag    = 510
     }
   ]
 }
