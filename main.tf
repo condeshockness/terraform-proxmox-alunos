@@ -7,7 +7,7 @@ locals {
       networks = [
         {
           name   = "eth0"
-          bridge = "vmbr1"
+          bridge = "vmbr0"
           ip     = "dhcp"
         }
       ]
