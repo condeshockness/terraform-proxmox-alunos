@@ -2,7 +2,7 @@ vault_address = ""
 vault_token   = ""
 
 lxc_template_name = "lxc-base-debian13-v1"
-target_node       = "proxmox"
+target_node       = "pve-iac"
 
 alunos_start_vmid = 300
 alunos_count      = 2
